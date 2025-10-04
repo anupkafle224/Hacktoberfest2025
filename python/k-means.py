@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 
-# Step 1: Generate sample data
+# Step 1: Generate sample data.
 X, y_true = make_blobs(n_samples=300, centers=4, cluster_std=0.6, random_state=42)
 
-# Step 2: Visualize the data
+# Step 2: Visualize the data.
 plt.scatter(X[:, 0], X[:, 1], s=30)
 plt.title("Generated Data")
 plt.xlabel("Feature 1")
